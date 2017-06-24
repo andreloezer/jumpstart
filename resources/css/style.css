@@ -15,6 +15,7 @@ h2 {
   margin-left: 15px;
 }
 
+
 h3 {
   font-size: 1.3rem;
   font-weight: bold;
@@ -44,10 +45,6 @@ h3 {
   outline: 0;
 }
 
-.container-fluid {
-  text-align: center;
-}
-
 .featured {
   color: #399bd1;
 }
@@ -62,8 +59,9 @@ h3 {
 }
 
 /* HEADER */
-header {
-
+nav {
+  position: relative;
+  margin-bottom: 0;
 }
 
 #active-link {
@@ -71,15 +69,28 @@ header {
   color: #399bd1;
 }
 
-header a:hover {
+nav a:hover {
   color: black;
+}
+
+@media only screen and (max-width: 800px) {
+  nav img {
+    display: none;
+  }
 }
 
 
 /* MAIN */
 
 main {
+  position: relative;
+}
 
+@media only screen and (max-width: 767px) {
+
+  main {
+    top: 135px;
+  }
 }
 
 
@@ -90,6 +101,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 #jumbotron div {
@@ -98,7 +110,7 @@ main {
   width: 51.3rem;
 }
 
-#jumbotron .container-fluid {
+#jumbotron .container {
   color: white;
   text-align: center;
   text-shadow: -1px -1px 0 #000,
@@ -107,63 +119,41 @@ main {
                 1px  1px 0 #000;
 }
 
-.container-fluid h1 {
+h1 {
   font-family: "Monoton";
   font-size: 7.1rem;
 }
 
-#jumbotron .btn {
-  background-color: #399bd1;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  margin-top: 2.8rem;
-  padding: 1.3rem;
-  width: 11.4rem;
+@media only screen and (max-width: 800px) {
+
+  h1 {
+    font-size: 5.7rem;
+  }
 }
 
-#jumbotron .btn:hover {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-}
+@media only screen and (max-width: 500px) {
 
-#jumbotron .btn:active {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-}
-
-#jumbotron .btn:hover,
-#jumbotron .btn:focus,
-#jumbotron .btn:active {
-  outline: 0;
+  #jumbotron .container {
+    padding: 0;
+  }
 }
 
 
 /* Featured Project */
-#featured-project {
-}
-
-#featured-project h2 {
-  /*color: #399bd1;
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: 15px;*/
-}
-
-picture {
-  /*width: 100%;*/
-}
-
-#featured-project img {
-  /*width: 100%;*/
-}
 
 #featured-project h3 {
-  /*font-size: 1.3rem;*/
-  /*font-weight: bold;*/
   margin-top: 0;
 }
 
 #featured-project li {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 991px) {
+  .col-xs-6 {
+    margin-top: 1.5rem;
+  }
 }
 
 
@@ -178,11 +168,11 @@ picture {
 
 #footer {
   background-color: #f3f3f3;
-  padding: 5.2rem;
+  padding: 5.2rem 0;
 }
 
-#footer .container-fluid {
-  /*width: 42rem;*/
+#footer .container {
+  text-align: center;
 }
 
 #footer strong {
@@ -193,9 +183,6 @@ picture {
   font-size: 14px;
   margin: auto;
   margin-top: 1.4rem;
+  max-width: 100%;
   width: 42rem;
-}
-
-#footer button {
-
 }

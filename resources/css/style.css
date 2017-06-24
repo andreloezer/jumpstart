@@ -1,0 +1,23 @@
+
+/* HTML */
+html {
+  font-size: 14px;
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+/* CLASSES */
+
+
+/* HEADER */
+header {
+
+}
+
+#active-link {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+header a:hover {
+  color: black;
+}

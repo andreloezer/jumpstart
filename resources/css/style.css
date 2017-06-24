@@ -5,14 +5,34 @@ html {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
+/* ELEMENTS */
+
+h2 {
+  color: #399bd1;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 /* CLASSES */
 
 .featured {
   color: #399bd1;
 }
 
+.image-container {
+  width: 100%;
+}
+
 .image-container img {
   opacity: 0.7;
+  width: 100%;
 }
 
 /* HEADER */
@@ -35,6 +55,7 @@ header a:hover {
 main {
 
 }
+
 
 /* Jumbotron */
 
@@ -87,33 +108,41 @@ main {
   outline: 0;
 }
 
+
 /* Featured Project */
 #featured-project {
 }
 
 #featured-project h2 {
-  color: #399bd1;
+  /*color: #399bd1;
   font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 15px;*/
 }
 
 picture {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 #featured-project img {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 #featured-project h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
+  /*font-size: 1.3rem;*/
+  /*font-weight: bold;*/
   margin-top: 0;
 }
 
 #featured-project li {
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Projects */
+
+#projects {
+  padding-bottom: 5.85rem;
 }

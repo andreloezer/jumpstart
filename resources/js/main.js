@@ -10,4 +10,17 @@ $(document).ready(function() {
     pauseOnFocus: false,
     pauseOnHover: false,
   });
-})
+
+  var scrolledDistance = 0;
+  $(window).scroll(function() {
+    var scroll = $(this).scrollTop();
+    if (scroll - scrolledDistance > 50) {
+      var navbarHeight = $('.navbar').css('height');
+      $('.navbar').animate({top: '-' + navbarHeight}, 150);
+      scrolledDistance = scroll;
+    } else if (scrolledDistance - scroll > 50) {
+      $('.navbar').animate({top: '0px'}, 150);
+      scrolledDistance = scroll;
+    }
+  });
+});
